@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kafatopu</title>
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        .score {
+            position: absolute;
+            top: 10px;
+            padding: 10px;
+            background-color: #f0f0f0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+            .score.left {
+                left: 10px;
+                top: 30px;
+            }
+
+            .score.right {
+                right: 400px;
+                top: 30px;
+            }
+    </style>
+</head>
+<body>
+    <div id="webgl"></div>
+
+    <div class="score left" id="firstScore"></div>
+    <div class="score right" id="secondScore"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/dat-gui/0.7.7/dat.gui.min.js"></script>
+    <script src="js/three.js"></script>
+    <script src="js/engine.js"></script>
+    <audio id="golMuzik" src="gol.mp3"></audio>
+    <audio id="dudukMuzik" src="duduk.mp3"></audio>
+
+</body>
+</html>
